@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arnold's Fitness</title>
+    <link rel="stylesheet" href="Css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        /* Here Body id used for Resetting CSS  */
+        body {
+            font-family: 'Baloo Bhai', cursive;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+            height: 800px;
+        }
+
+        .logo {
+            line-height: 15px;
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+            padding: 5px;
+            position: absolute;
+            top: 20px;
+            left: 25px;
+            /* border: 2px solid white; */
+
+        }
+
+        .logo img {
+            filter: invert();
+            width: 65px;
+        }
+
+        .navbar {
+
+            display: block;
+            margin: 50px auto;
+            width: 50%;
+            /* border: 2px solid rgb(255, 255, 255); */
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+        }
+
+        .button {
+            margin: 2px;
+            padding: 18px;
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            /* border: 2px solid rgb(255, 255, 255); */
+
+        }
+
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 5px;
+            /* size: 25px; */
+        }
+
+        /* here we also use (.navbar li a.active) this one and see result */
+        .navbar li a:hover {
+            color: rgb(216, 142, 142);
+            text-decoration: underline;
+
+        }
+
+        #btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: large;
+            margin: 0px 9px;
+            padding: 4px 14px;
+            border-radius: 10px;
+            color: rgb(255, 255, 255);
+            background-color: black;
+            border: 2px solid rgb(255, 255, 255);
+            cursor: pointer;
+        }
+
+        #btn:hover {
+            background-color: rgb(196, 219, 239);
+        }
+
+        .container {
+            font-family: 'Baloo Bhai 2', cursive;
+            border: 3px solid rgb(255, 255, 255);
+            margin: 250px 350px;
+            padding: 35px;
+            width: 40%;
+            border-radius: 10px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 400px;
+            margin: 10px auto;
+            padding: 5px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+
+        }
+
+        .container button {
+            font-size: 25px;
+            font-family: 'Baloo Bhai 2', cursive;
+            border: 2px solid white;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+            display: block;
+            width: 80%;
+            margin: 0px 52px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        .container button:hover{
+            background-color: rgb(255, 255, 255);
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/Logo.png" alt="">
+            <div>Arnold's Fitness</div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="button">
+            <button id="btn">Call Us</button>
+            <button id="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym of Haryana now</h1>
+        <!-- here noaction.php is used by the developer -->
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter ur Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter ur Mobile no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Sex">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Age">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
